@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">出入境管理</h1>
+
+    <table>请按照情况填写出访地</table>
+
+
+
+</div>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head runat="server">
+    <title>HtmlSelect下拉列表框控件实例</title>
+</head>
+
+
+
+
+
+<body>
+    <form runat="MysqlUtil">
+        选择国家（地区）:
+        <select class="Cityselect">
+            <option>-请选择国家-</option>
+            
+            <option value="Nation" />
+
+        </select>
+        
+        <span id="showInfo" runat="server"></span><br />
+
+        停留类别：
+        <select >
+            <option>-一次停留-</option>
+            <option>-多次停留-</option>
+            <option value="停留类别" />
+
+        </select><br />
+        
+        
+
+        城市：
+        <select class="Cityselect">
+            <option>-请选择城市-</option>
+            <option value="城市" />
+
+        </select>
+        
+        <span id="showInfo" runat="server"></span><br />
+
+        停留天数：
+        <div class="form-group">
+            <label class="control-label"></label>
+            <input class="form-control" />
+            <span class="text-danger"></span>
+        </div>
+
+        <input type="button" id="button" value="确定" OnServerClick="button_click" runat="server" /> <br />
+        
+        邀请单位：
+
+        <label class="control-label"></label>
+        <input class="form-control" />
+        <span class="text-danger"></span>
+
+        <input type="button" id="button" value="确定" OnServerClick="button_click" runat="server" /> <br />
+        
+    </form>
+
+</body>
+
+
